@@ -107,3 +107,9 @@ variable "status_checks_contexts" {
   default     = []
   description = "The list of required status checks in order to merge into the protected branch, e.g. AWS CodeBuild ap-southeast-1 (<codebuild_project_name>)"
 }
+
+variable "enforce_admins" {
+  type = "string"
+  default = true
+  description = "is admin should be enforced to look for approval before squashing pull request"
+}
